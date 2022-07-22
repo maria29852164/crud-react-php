@@ -1,0 +1,14 @@
+.footer{
+  position: absolute;
+  width: 100%;
+  bottom:0;
+  margin-top:20px;
+  background-color: #1b1e21;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  height: 5vh;
+  .info{
+    padding-top:10px;
+  }
+}

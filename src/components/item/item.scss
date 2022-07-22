@@ -1,0 +1,40 @@
+.card{
+  background-color: #2c2c2c;
+  color:whitesmoke;
+  width: 80%;
+  border-radius: 10px;
+  margin-top:1em;
+
+
+  .card-title{
+    h3{
+
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  .card-body{
+    img{
+      width: 100%;
+    }
+  }
+  .info{
+    padding: 1em;
+    text-align: center;
+    .actions{
+      display: flex;
+      justify-content: space-evenly;
+      button{
+        margin: 1em;
+        border:none;
+        text-decoration: none;
+        img{
+          height: 2em;
+
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}

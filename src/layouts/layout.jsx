@@ -4,12 +4,16 @@ import {Footer} from "./footer/footer";
 import '../styles/style.scss'
 export const Layout = ({children})=> {
     return (
-        <div className='main'>
+        <React.Fragment>
+            <div className='main'>
 
-            <Header/>
-            {children}
-            <Footer/>
+                <Header/>
+                {children}
 
-        </div>
+
+            </div>
+
+        </React.Fragment>
+
     );
 }

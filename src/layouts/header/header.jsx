@@ -3,9 +3,7 @@ import {Link} from 'react-router-dom'
 import './header.scss'
 
 const links = [
-    {name: "Home",path:"/home"},
-    {name: "Payments",path:"/checkout/payments"},
-    {name:'Checkout', path: '/checkout'}
+    {name: "Item",path:"/items"},
 ];
 export const Header = ()=> {
     return (
