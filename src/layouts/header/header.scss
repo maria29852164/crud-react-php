@@ -1,0 +1,29 @@
+.header{
+  background-color: #232323;
+
+
+  .menu{
+    .list-menu{
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      .item{
+        padding: 1rem;
+        text-decoration: none;
+        color:whitesmoke;
+        margin-left:1em;
+        margin-right: 1em;
+        font-size: 1.6em;
+
+        list-style: none;
+        transition: color linear 0.3s;
+
+
+
+      }
+      .item:hover{
+        color: #00d9ff;
+      }
+    }
+  }
+}
