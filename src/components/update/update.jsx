@@ -19,23 +19,14 @@ export const Update = (props) => {
     const {register,errors, handleSubmit} = useForm();
     const [item, setItem] = useState([]);
     const {id} = props.match.params;
-    useEffect(() => {
 
-        return () => {
-            fetch(`http://localhost:8000/api/v1/item/${id}`)
-                .then(data => {
-                    setItem(item)
-
-
-                })
-        };
-    }, [id]);
 
 
 
     return (
 
         <div className='form-card'>
+            <h1>Update item</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="input-group">
                     <label htmlFor="title">Title</label>
@@ -60,7 +51,7 @@ export const Update = (props) => {
 
                 </div>
                 <div className="input-group">
-                    <button type='submit'>Create</button>
+                    <button type='submit'>Update</button>
                 </div>
 
             </form>

@@ -18,6 +18,8 @@ export const Store = () => {
 
     return (
         <div className='form-card'>
+            <h1>Store item</h1>
+
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="input-group">
                     <label htmlFor="title">Title</label>
