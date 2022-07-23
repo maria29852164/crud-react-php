@@ -19,6 +19,7 @@
     "react-bootstrap": "^2.4.0",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.33.1",
+    "react-paginator": "0.0.5",
     "react-router-dom": "^5.3.3"
   },
   "devDependencies": {
