@@ -11,6 +11,7 @@ import {Home} from "../components/home/home.jsx";
 import {Layout} from "../layouts/layout";
 import {Items} from "../components/items/items";
 import {Store} from "../components/store/store";
+import {Update} from "../components/update/update";
 
 
 export const AppRouter= ()=> {
@@ -23,6 +24,7 @@ export const AppRouter= ()=> {
                 <Route exact path='/home' component={Home}></Route>
                 <Route exact path='/items' component={Items}></Route>
                 <Route exact path='/item/store' component={Store}></Route>
+                <Route exact path='/item/update/:id' component={Update}></Route>
 
 
 

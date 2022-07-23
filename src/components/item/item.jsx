@@ -2,6 +2,7 @@ import React,{useRef} from 'react';
 import './item.scss'
 import edit from '../../assets/images/edit.png'
 import deleteAction from '../../assets/images/delete.png'
+import {Link} from "react-router-dom";
 
 
 const deleteItem = (id,refreshItems)=>{
@@ -35,9 +36,13 @@ export const Item = (props) => {
 
                 <p>{description}</p>
                 <div className="actions">
-                    <button>
-                        <img src={edit}  alt=""/>
+                    <button >
+                        <Link  to={`/item/update/${id}`}>
+                            <img src={edit}  alt=""/>
+
+                        </Link>
                     </button>
+
                     <button onClick={() => deleteItem(id,refreshItems)}>
                         <img src={deleteAction}   alt=""/>
                     </button>
