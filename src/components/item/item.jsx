@@ -19,20 +19,21 @@ const deleteItem = (id,refreshItems)=>{
 
 }
 export const Item = (props) => {
-    const {id,title,description,image} = props.item;
+    const {id,title,description,image,price} = props.item;
     const {refreshItems} = props
     const ref = useRef(null);
 
     return (
         <div className='card'>
             <div className="card-title">
-               <h3>{title}</h3>
+               <h3>{title} </h3>
             </div>
 
             <div className="card-body">
                 <img ref={ref} src={image} alt=''  />
             </div>
             <div className="info">
+                <p>Price ${price}</p>
 
                 <p>{description}</p>
                 <div className="actions">
