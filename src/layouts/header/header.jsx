@@ -4,6 +4,7 @@ import './header.scss'
 
 const links = [
     {name: "Item",path:"/items"},
+    {name:'Store item', path: '/item/store'}
 ];
 export const Header = ()=> {
     return (

@@ -1,0 +1,47 @@
+.form-card{
+  margin-top:5em;
+  width: 70%;
+ margin-left:auto;
+  margin-right: auto;
+  background-color: #232323;
+  border-radius: 10px;
+  color:white;
+
+  form{
+
+
+    .input-group{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      label{
+        display: block;
+        font-size:2em;
+        padding: 10px;
+
+      }
+      input{
+        width: 80%;
+        padding: 1em;
+        border:none;
+
+      }
+      input:focus{
+        outline: 2px solid #06559f;
+
+      }
+    }
+    button{
+      margin:1em;
+      border:none;
+      background-color: #06559f;
+      color:whitesmoke;
+      padding:1em;
+      border-radius: 6px;
+
+    }
+
+
+  }
+}
