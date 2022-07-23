@@ -4,7 +4,24 @@
   align-items: center;
 
 }
+.paginator{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  button{
+    margin:1em;
+    border:none;
+    background-color: #06559f;
+    color:whitesmoke;
+    padding: 1em;
+  }
+}
 /* */
+
+h3{
+  text-align: center;
+}
 
 
 

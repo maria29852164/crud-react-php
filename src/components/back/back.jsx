@@ -1,10 +1,17 @@
 import React from 'react';
+const getItemsBypPage=(page,handlerItems,setPage)=>{
+    fetch(`http://localhost:8000/api/v1/items?page=${page}`)
+        .then(data => data.json())
+        .then(response => {
+            setPage(page-1)
+            handlerItems(response.results)
 
-export const Back = ({page,setPage}) => {
+        })
+}
+export const Back = ({page,handlerItems,setPage}) => {
     return  (
-        <div>
-            <button onClick={()=>setPage(page-1)} > next page : {page-1}</button>
-        </div>
+        (page-1 > 0 )?            <button onClick={()=>getItemsBypPage(page,handlerItems,setPage)} > next page : {page-1}</button>
+            : null
 
     )
 };
