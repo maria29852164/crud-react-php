@@ -12,7 +12,7 @@ const deleteItem = (id,refreshItems)=>{
             (deleteItem)=>{
 
                 fetch(`http://localhost:8000/api/v1/items`).then(data=>data.json())
-                    .then(items => refreshItems(items) )
+                    .then(response => refreshItems(response.results) )
             }
         );
 
